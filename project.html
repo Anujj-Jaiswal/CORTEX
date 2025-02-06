@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+    <div class="container">
+        <p class="intro-text">Projects & Publications</p>
+        
+        <!-- Filter Navigation -->
+        <div class="filter-nav">
+            <span class="filter-link active" data-category="all">Omni</span>
+            <span class="filter-link" data-category="frontend">Frontend</span>
+            <span class="filter-link" data-category="python">Python</span>
+            <span class="filter-link" data-category="java">Java</span>
+            <span class="filter-link" data-category="arduino">Arduino</span>
+            <span class="filter-link" data-category="research">Publications</span>
+        </div>
+
+        <!-- Project Grid (Vertical Layout) -->
+        <div class="project-grid">
+            <div class="project-card active" data-category="java">
+                <img src="images/3.png" alt="Agile Tool Management">
+                <div class="project-description">
+                    <h2>Agile Workflow Optimization Tool</h2>
+                    <p>A project management dashboard built with Spring Boot and Angular, enabling task assignment, progress tracking,
+                        collaboration, role-based access control, JWT authentication, real-time updates in a Java-based ecosystem.</p>
+                    <!-- <a href="https://github.com/Anujj-Jaiswal/Agile-Workflow-Optimization-Tool" class="view-btn" target="_blank">View Here</a> -->
+                </div>
+            </div>
+
+            <div class="project-card" data-category="java">
+                <img src="images/1.png" alt="Asset Management">
+                <div class="project-description">
+                    <h2>Asset Monitoring & Management CLI</h2>
+                    <p>Comprehensive CLI tool for efficient asset registration, allocation, maintenance, reporting, and tracking, using Java SE
+                        for core logic, JDBC for database connectivity, MySQL for storage, and Maven for dependency management.</p>
+                    <!--<a href="https://github.com/Anujj-Jaiswal/Asset-Monitoring-Management-CLI" class="view-btn" target="_blank">View Here</a> -->
+                </div>
+            </div>
+
+            <div class="project-card" data-category="python">
+                <img src="images/6.png" alt="RAG Project">
+                <div class="project-description">
+                    <h2>Chat with Multiple PDFs</h2>
+                    <p>Developed a PDF processing application with chatbot integration for real-time Q&A, dynamic text-to-speech, and document analysis, utilizing PyPDF2, LangChain, FAISS, and Google Generative AI for efficient extraction and search.</p>
+                    <a href="https://www.dropbox.com/scl/fi/msxwsgw2x65haul6lnycd/MultiPdf-Chatbot.mp4?rlkey=9k8v8yxu12el63kk0tmqg3jy4&e=1&st=pzyo1xif&dl=0" class="view-btn" target="_blank">View Here</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="frontend">
+                <img src="images/2.png" alt="Blogsphere">
+                <div class="project-description">
+                    <h2>Blogsphere</h2>
+                    <p>Developed, deployed, and managed a personal blog website, serving as a platform where I publish insightful content
+                        pertaining to the latest technological trends, gaming, and news. Made with the help of Frontend webtech, Sublimetext.</p>
+                    <a href="https://anujj-jaiswal.github.io/BlogSphere/" class="view-btn" target="_blank">View Here</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="frontend">
+                <img src="images/5.png" alt="Frontend Projects">
+                <div class="project-description">
+                    <h2>Frontend Based Projects</h2>
+                    <p>I made certain small projects such as a news application & a Chrome extension solely with the help of HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/Anujj-Jaiswal/Frontend-Projects" class="view-btn" target="_blank">View Here</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="arduino">
+                <img src="images/4.png" alt="Arduino Project">
+                <div class="project-description">
+                    <h2>Arduino-based Music Player</h2>
+                    <p>Developed an Arduino-based music player, integrating an Arduino Nano, SD Card Module, and speakers to enable
+                        lag-free playback of .wav audio files. This project involved hardware assembly and software implementation.</p>
+                    <a href="file:///C:/myfiles/WebApps/Arduino%20Documentation/index.html" class="view-btn" target="_blank">View Here</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="research">
+                <img src="images/7.png" alt="Research Paper">
+                <div class="project-description">
+                    <h2>Retrieval Augmented Approach for MultiPDF Chatbot using Langchain</h2>
+                    <p>Presented a research paper at the 8th ICCUBEA-2024, Pune, an IEEE co-sponsored conference. The paper, published by IEEE, explores AI-driven document processing and chatbot integration, contributing to advancements in cognitive computing and interactive knowledge sharing.</p>
+                    <a href="https://ieeexplore.ieee.org/document/10774607" class="view-btn" target="_blank">View Here</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>

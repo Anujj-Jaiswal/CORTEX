@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background: url('images/pen-gray.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: 3%; /* Moves content 10% from the left */
+    color: black;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
+.quote {
+    margin-bottom: 20px;
+    padding: 2px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.author {
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: url('images/bg10.jpg') no-repeat center center/cover
+    }
+    .container {
+        max-width: 97%;
+        margin-left: 5%; /* Adjust for better centering on mobile */
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .quote {
+
+        font-size: 10px;
+        
+    }
+}

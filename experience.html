@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know-How</title>
+    <link rel="stylesheet" href="experience.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Experience Title -->
+    <h1 class="experience-title">Experience</h1>
+
+    <div class="experience-section">
+        <p class="experience-content">
+           <a href="https://www.disruptivenext.com/" class="highlight-link" data-tooltip="View conducted tasks">Web Automation Intern @ Disruptive Next</a><br><strong>(H1 2024)</strong>
+           
+            I automated LinkedIn searches & extracted structured data, handled API key rotations for rate limits, 
+            and refined extracted data using Regex for insights. <br>
+            <br>
+
+            <a href="https://hexaware.com/" class="highlight-link" data-tooltip="View conducted assignments">Software Engineer Trainee @ Hexaware</a><br><strong>(H2 2024)</strong>
+            I trained under the company's Early Intervention Program (EIP), starting with <em>Java SE & Jakarta EE covering Jakarta Persistence API & MVC</em> 
+            before moving into full-stack development with <em>Spring & Angular</em> through case studies & assessments.
+            <br>
+            <br>
+
+            <!-- Stack of tools should be hidden on mobile -->
+            <span class="highlight" id="stack-hover">"Hover here to see the Stack of tools I have used along the way"</span> 
+        </p>
+    </div>
+
+    <!-- Skill Card - Only for Desktop -->
+    <div class="skill-card" id="skill-card">
+        <ul>
+            <li class="skill-category" data-skill="programming">Programming</li>
+            <li class="skill-category" data-skill="ides">IDEs</li>
+            <li class="skill-category" data-skill="frontend">Frontend</li>
+            <li class="skill-category" data-skill="frameworks">Frameworks</li>
+            <li class="skill-category" data-skill="api">API Testing Tools</li>
+            <li class="skill-category" data-skill="database">Databases</li>
+            <li class="skill-category" data-skill="version">Version Control</li>
+        </ul>
+
+        <div class="skill-details" id="skill-details"></div>
+    </div>
+
+    <script src="experience.js"></script>
+</body>
+</html>

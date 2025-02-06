@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/lib.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    text-align: center;
+}
+
+/* Bookshelf text in the upper left corner */
+.bookshelf-text {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/* Container styles */
+.container {
+    padding: 5vw;
+    font-size: 1rem;
+}
+
+/* Book Cards Section */
+.book-cards {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Card Styling */
+.card {
+    width: 150px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: rotateY(20deg);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .description {
+    opacity: 1;
+}
+
+/* Quotes Text */
+.quote-text {
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    font-size: 1.25rem;
+    text-align: right;
+}
+
+.quote-text a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    transition: opacity 0.3s ease;
+}
+
+.quote-text a:hover {
+    opacity: 0.7;
+}
+
+/* GIF positioning */
+.corner-gif {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bookshelf-text {
+        font-size: 1.5rem;
+        left: 10px;
+    }
+
+    .book-cards {
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .card {
+        width: 120px;
+        height: 180px;
+    }
+
+    .quote-text {
+        position: static;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+
+    .corner-gif {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bookshelf-text {
+        font-size: 1.25rem;
+    }
+
+    .card {
+        width: 100px;
+        height: 160px;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+    }
+
+    .corner-gif {
+        width: 50px;
+    }
+}

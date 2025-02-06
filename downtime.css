@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-image: url('images/background4.jpeg');
+    background-size: cover;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downtime-container {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.for-text {
+    font-size: 6rem;
+    color: white;
+}
+
+.hobbies {
+    font-size: 1.5rem;
+    color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Custom link styles */
+.link-movie,
+.link-game,
+.link-book,
+.link-song,
+.link-blog {
+    color: white;
+}
+
+.link-meme {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
