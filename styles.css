@@ -175,26 +175,26 @@ body, html {
   }
 
   .description {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.5;
     text-align: justify;
-    width: 85%;
+    width: 90%;
     margin-bottom: 10px;
   }
 
   .cv-link {
     font-size: 11px;
     position: absolute;
-    top: 50%;
-    left: 82%;
+    top: 40%;
+    left: 60%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 150px;
+    width: 300px;
   }
 
   .last-updated {
     font-size: 12px;
-    bottom: 10px;
+    bottom: 45px;
     right: 10px;
   }
 }
